@@ -20,7 +20,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api/users", userRoutes);
+app.use("/api/v1/users", userRoutes);
 
 app.get("/health", (_, res) => {
   res.status(200).json({
